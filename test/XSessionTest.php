@@ -53,6 +53,8 @@ class XSessionTest extends TestCase {
 	
  	//remove files from the session_save_path dir
         shell_exec('rm -rf App/XSession/sess/*');
+
+
         
     }
 
