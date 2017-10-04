@@ -23,9 +23,12 @@ class XSessionTest extends TestCase {
     }
 
     public function testSessionCreated() {
+try{
         $this->s = new XSession("test_session", 300);
         $this->s->start(); 
-	
+	}catch(Exception $e){
+echo $e->getMessage();
+}
 	//make sure the instance of the XSession class was created
 	$this->assertInstanceOf( XSession::class, $this->s);	
 

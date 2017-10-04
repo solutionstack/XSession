@@ -16,8 +16,7 @@ and open the template in the editor.
   
    <testsuites>
     <testsuite name="XSession Tests">
-      <directory >./test</directory>
-      
+      <directory >./</directory>
     </testsuite>
   </testsuites>
   
@@ -38,7 +37,7 @@ and open the template in the editor.
 
 <filter>
   <whitelist processUncoveredFilesFromWhitelist="true">
-    <directory suffix=".php">./test</directory>
+    <directory suffix=".php">./</directory>
    	 <!--<file>XSession.php</file>
    <exclude>
       <directory suffix=".php">/path/to/files</directory>
