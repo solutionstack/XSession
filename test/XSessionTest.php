@@ -34,7 +34,7 @@ $s_dir = __DIR__."/App/XSession/sess";
   $r = shell_exec('dir '. $s_dir);
 echo $r;
 	//make sure session file gets created, in the save path
-	$this->assertFileExists("App/XSession/sess/sess_".$this->s->getSID(), "session file not created in save path");
+	$this->assertFileExists(__DIR__."/App/XSession/sess/sess_".$this->s->getSID(), "session file not created in save path");
 
 	  $this->s->put("bar",2000);
 	
