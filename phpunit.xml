@@ -39,8 +39,8 @@ and open the template in the editor.
 <filter>
   <whitelist processUncoveredFilesFromWhitelist="true">
     <directory suffix=".php">./test</directory>
-   	<file>XSession.php</file>
-    <!--<exclude>
+   	 <!--<file>XSession.php</file>
+   <exclude>
       <directory suffix=".php">/path/to/files</directory>
       <file>/path/to/file</file>
     </exclude>-->
