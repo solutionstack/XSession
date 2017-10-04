@@ -16,7 +16,7 @@ and open the template in the editor.
   
    <testsuites>
     <testsuite name="XSession Tests">
-      <directory >./</directory>
+      <directory >./test</directory>
       
     </testsuite>
   </testsuites>
