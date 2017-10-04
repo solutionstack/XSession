@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<phpunit 
+      convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+	backupStaticAttributes="true"
+	processIsolation="false"
+ 
+>
+  <!-- ... -->
+  
+   <testsuites>
+    <testsuite name="XSession Tests">
+      <directory >./</directory>
+      
+    </testsuite>
+  </testsuites>
+  
+  <php>
+  <includePath>.</includePath>
+<!--  <ini name="foo" value="bar"/>
+  <const name="foo" value="bar"/>
+  <var name="foo" value="bar"/>
+  <env name="foo" value="bar"/>
+  <post name="foo" value="bar"/>
+  <get name="foo" value="bar"/>
+  <cookie name="foo" value="bar"/>-->
+  <server name="SERVER_NAME" value="www.example.local"/>
+  <server name="HTTP_USER_AGENT" value="mozilla"/>
+  <server name="HTTPS" value="On"/>
+ 
+</php>
+
+
+</phpunit>
+
