@@ -30,9 +30,6 @@ class XSessionTest extends TestCase {
 	//make sure the instance of the XSession class was created
 	$this->assertInstanceOf( XSession::class, $this->s);	
 
-$s_dir = __DIR__."/App/XSession/sess";
-  $r = shell_exec('dir '. $s_dir);
-echo $r;
 	//make sure session file gets created, in the save path
 	$this->assertFileExists(__DIR__."/App/XSession/sess/sess_".$this->s->getSID(), "session file not created in save path");
 
