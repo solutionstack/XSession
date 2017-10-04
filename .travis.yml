@@ -32,7 +32,7 @@ before_script:
  # 3- if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
 
 # omitting "script:" will default to phpunit
-# use the $DB env variable to determine the phpunit.xml to use
+# set our custom path for phpunit.xml
 script: phpunit --stderr --configuration test/phpunit.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
