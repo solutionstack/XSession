@@ -29,18 +29,21 @@ matrix:
 
 # execute any number of scripts before the test run, custom env's are available as variables
 before_script:
- npm i istanbul mocha coveralls -D
+  - npm i istanbul mocha coveralls -D
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
  # - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
 #  - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
  # 3- if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
 
 # omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
-script: phpunit --stderr --configuration test/phpunit.xml --coverage-text
-
+script: 
+   - mkdir -p build/logs
+   - phpunit --stderr -c test/phpunit.xml
 # configure notifications (email, IRC, campfire etc)
 notifications:
   #irc: "irc.freenode.org#yourfavouriteroomfortravis"
 
 after_success: 
-  'npm run coveralls'
+  - travis_retry php vendor/bin/coveralls
