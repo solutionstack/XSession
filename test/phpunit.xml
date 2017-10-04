@@ -46,6 +46,10 @@ and open the template in the editor.
   </whitelist>
 </filter>
 
+  <logging>
+        ...
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        ...
 
 </phpunit>
 

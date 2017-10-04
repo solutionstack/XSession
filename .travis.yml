@@ -31,7 +31,6 @@ matrix:
 before_script:
   - npm i istanbul mocha coveralls -D
   - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install --dev --no-interaction
  # - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
 #  - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
  # 3- if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
