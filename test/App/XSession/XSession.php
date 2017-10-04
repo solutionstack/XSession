@@ -122,7 +122,7 @@ class XSession extends SessionHandler {
         return $this->forget();
     }
     /**
-     * Return the current SID
+     * End the session
      * 
      */
     public function getSID() {

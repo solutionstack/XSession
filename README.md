@@ -1,2 +1,2 @@
 # XSession
-A PHP class to easily handle multiple sessions 
+An OO-PHP class to easily handle sessions 
