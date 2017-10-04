@@ -5,6 +5,9 @@
 # XSession
 An OO-PHP class to easily handle sessions 
 
+## Requirements
+ - PHP 5.6+
+
 ## Usage
  Include or autoload the XSession.php file, then use as follows..
  
