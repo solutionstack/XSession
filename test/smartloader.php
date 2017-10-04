@@ -22,7 +22,7 @@
 
 \spl_autoload_register(function($class_name) {
 
-    $classes_root = "App/"; //change to reflect your classes root folder, i normally just use App/
+    $classes_root = __DIR__."/App"; //change to reflect your classes root folder, i normally just use App/
     //see if we have a chache and the queried class file path is already inc cache
     if (\function_exists('apcu_add')) {
 
