@@ -22,7 +22,7 @@ An OO-PHP class to easily handle sessions
     $s->put("user_email", "mail@example.com");
     
  ```
- ## In other pages u need to use (check/resume) the session, just do..
+ ## In other pages you need to use (check/resume) the session, just do..
  
  ```php
     //use the same session name used in starting the session
