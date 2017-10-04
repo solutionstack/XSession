@@ -29,6 +29,7 @@ matrix:
 
 # execute any number of scripts before the test run, custom env's are available as variables
 before_script:
+ npm i istanbul mocha coveralls -D
  # - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
 #  - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
  # 3- if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
@@ -40,3 +41,6 @@ script: phpunit --stderr --configuration test/phpunit.xml --coverage-text
 # configure notifications (email, IRC, campfire etc)
 notifications:
   #irc: "irc.freenode.org#yourfavouriteroomfortravis"
+
+after_success: 
+  'npm run coveralls'
