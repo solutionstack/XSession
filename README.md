@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/solutionstack/XSession.svg?branch=master)](https://travis-ci.org/solutionstack/XSession)
-[![GitHub release](https://img.shields.io/github/release/XSession/rubidium.svg)]()
+[![Coveralls branch](https://img.shields.io/coveralls/solutionstack/XSession/master.svg)]()
+[![GitHub release](https://img.shields.io/github/release/solutionstack/XSession.svg)]()
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/solutionstack/XSession/issues)
 
 
