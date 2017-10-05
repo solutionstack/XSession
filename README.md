@@ -23,25 +23,31 @@ An OO-PHP class to easily handle sessions
     $s->put("user_email", "mail@example.com");
     
  ```
- ## In other pages u need to use (check/resume) the session, just do..
+ ## In other pages you need to use (check/resume) the session, just do..
  
  ```php
-    //use the same session name used in starting the session
+    use solutionstack\XSession;
+    
+   //use the same session name used in starting the session
    $s = new XSession(string session_name);
    
-  if($s->resume()) { //session was succesfully resumed
+   if($s->resume()) { //check if session was succesfully resumed
   
       //do stuff for authenticated users
       //also get previously set session values, or set new one
       $email = $s->get("user_email");
    }
- 
+   else{
+            //session didn't resume succesfully, logout or do other stuff 
+   }
  ```
  ## When done with the session, say in your logout routine,..
  
   ```php
+  
+    use solutionstack\XSession;
+    
     //use the same session name used in starting the session
-   
    $s = new XSession(string session_name);
    $s->end();
    
