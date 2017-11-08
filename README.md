@@ -61,7 +61,7 @@ An OO-PHP class to easily handle sessions
  License
  ----
 
- MIT
+ Apache 2
 
 
  **Free Software, Hell Yeah!**
