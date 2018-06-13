@@ -9,7 +9,7 @@
  * @license MIT License
  */
 
-namespace solutionstack;
+namespace solutionstack\XSession;
 
 use SessionHandler;
 
