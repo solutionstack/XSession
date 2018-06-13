@@ -39,7 +39,7 @@
 
 
 // Filter directories, i dont need the result, so cast to NULL
-    (unset) $files = new \CallbackFilterIterator($dir, function ($current, $key, $iterator) use ($class_name) {
+    $files = new \CallbackFilterIterator($dir, function ($current, $key, $iterator) use ($class_name) {
 
         if ($current->isFile()) {
 
