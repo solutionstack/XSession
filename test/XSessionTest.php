@@ -6,7 +6,7 @@ namespace XSessionTest;
 include_once 'smartloader.php';
 
 use PHPUnit\Framework\TestCase;
-use solutionstack\XSession;
+use solutionstack\XSession\XSession;
 
 class XSessionTest extends TestCase {
 
