@@ -11,6 +11,7 @@
 
 namespace solutionstack\XSession;
 
+
 use SessionHandler;
 
 class XSession extends SessionHandler {
